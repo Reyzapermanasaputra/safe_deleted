@@ -13,7 +13,7 @@ gem 'safe_deleted'
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
 Or install it yourself as:
@@ -23,7 +23,11 @@ $ gem install safe_deleted
 
 add your model or in application_record.rb :
 ```bash
-$ include SafeDeleted::ActsAsSafeDeleted
+class ApplicationRecord < ActiveRecord::Base
+  include SafeDeleted::ActsAsSafeDeleted
+
+  self.abstract_class = true
+end
 ```
 
 ## License
