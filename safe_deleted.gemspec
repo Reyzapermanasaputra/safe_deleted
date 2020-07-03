@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.version     = SafeDeleted::VERSION
   spec.authors     = ["Reyza Permana Saputra"]
   spec.email       = ["reyzaps@gmail.com"]
-  spec.homepage    = "https://guides.rubyonrails.org/plugins.html"
+  spec.homepage    = "https://infongaji.com"
   spec.summary     = "safe deleted active record"
   spec.description = "safe deleted active record"
   spec.license     = "MIT"
