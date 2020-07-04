@@ -30,5 +30,17 @@ class ApplicationRecord < ActiveRecord::Base
 end
 ```
 
+## Examples
+you can using this command in your console :
+```bash
+$  User.active
+   same as User.where(is_active: true)
+$  User.inactive
+   same as User.where(is_active: false)
+$  user = user.last
+$  user.soft_delete
+   same as user.update_attributes(is_active: false)
+```
+
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
